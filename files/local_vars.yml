@@ -1,0 +1,6 @@
+ansible_sudo_passwd: <idir password>
+default_github_token: <github token for source code download>
+private_branch: sprint6
+config_branch: sprint6
+
+source_db_password: <password for data source to populate arches>
