@@ -1,6 +1,11 @@
 ansible_sudo_passwd: <idir password>
+default_artifactory_password: <idir password>
 default_github_token: <github token for source code download>
-private_branch: sprint6
-config_branch: sprint6
+private_branch: sprint10_endowment
+config_branch: sprint10_endowment
 
-source_db_password: <password for data source to populate arches>
+db_admin_password: <postgres password on target>
+
+# Working with dev release so the version number doesn't change. Need to force reinstall
+force_core_pip_install: True
+core_repo_tag: "dev/7.5.x_2023-11-20"
