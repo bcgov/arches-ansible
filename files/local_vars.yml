@@ -1,8 +1,7 @@
-ansible_sudo_passwd: <idir password>
-default_artifactory_password: <idir password>
-default_github_token: <github token for source code download>
-private_branch: sprint10_endowment
-config_branch: sprint10_endowment
+ansible_sudo_passwd: "{{ lookup('ansible.builtin.env', 'IDIR_PASSWORD') }}"
+default_artifactory_password: "{{ lookup('ansible.builtin.env', 'IDIR_PASSWORD') }}"
+default_github_token: "{{ lookup('ansible.builtin.env', 'GITHUB_TOKEN') }}"
+config_branch: "<branch name>"
 
 # Required for 7.6.x
 python_executable: /usr/bin/python3.12
